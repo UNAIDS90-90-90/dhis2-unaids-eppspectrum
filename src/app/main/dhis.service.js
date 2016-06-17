@@ -6,9 +6,9 @@
             var stateSetting = 'spectrumImportState';
 
             var initialConfig = {
-                dataElementFile: 'https://github.com/hivpopapp/dhis2-unaids-eppspectrum-resources/raw/master/configuration/current/hivpopdata_DataElements.xml',
-                indicatorFile: 'https://raw.githubusercontent.com/hivpopapp/dhis2-unaids-eppspectrum-resources/master/configuration/current/hivpopdata_Indicators.xml',
-                dashboardFile: 'https://github.com/hivpopapp/dhis2-unaids-eppspectrum-resources/raw/master/configuration/current/hivpopdata_Documents.xml',
+                dataElementFile: 'https://raw.githubusercontent.com/hivpopapp/dhis2-unaids-eppspectrum-resources/master/configuration/current//hivpopdata_DataElements.xml',
+                indicatorFile:   'https://raw.githubusercontent.com/hivpopapp/dhis2-unaids-eppspectrum-resources/master/configuration/current/hivpopdata_Indicators.xml',
+                dashboardFile:   'https://raw.githubusercontent.com/hivpopapp/dhis2-unaids-eppspectrum-resources/master/configuration/current//hivpopdata_Documents.xml',
                 strategy: {
                     value: 'NEW',
                     text: 'New Only'
