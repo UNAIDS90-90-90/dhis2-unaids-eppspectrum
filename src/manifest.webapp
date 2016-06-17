@@ -1,13 +1,13 @@
 {
-    "name": "HIV/AIDS-Spectrum Bootstrap",
-    "description": "Application is designed to allow a HIS Manager to instantiate (bootstrap) a set of standard data elements and indicators in DHIS2 that can be used for importing and using Spectrum derived HIV/AIDS related estimates.",
-    "version": "0.0.1",
+    "name": "hiv pop data",
+    "description": "Application is designed to allow a HIS Manager to instantiate a set of standard data elements and indicators in DHIS2 that can be used for importing and using Spectrum derived HIV/AIDS related estimates.",
+    "version": "0.9.9",
     "icons": {
-        "48": "assets/images/unaids.png"
+        "48": "assets/images/hiv-pop-data-logo-only-48.png"
     },
     "developer": {
         "name": "Entuura Team",
-        "company": "Entuura",
+        "company": "Entuura Ventures Limited",
         "email": "dev@entuura.org"
     },
     "permissions": null,
