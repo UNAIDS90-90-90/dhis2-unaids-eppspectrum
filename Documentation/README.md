@@ -5,5 +5,5 @@ repository at:
 
 https://github.com/UNAIDS/dhis2-unaids-eppspectrum-resources
 
-This repository only contains material pertinent to the software source
+This repository you are in only contains material pertinent to the software source
 code of the app.
