@@ -27,23 +27,45 @@ bug/discuss list associated with this GitHub project.
 
 
 # Software Development Setup
-From the root of the project.
 
-Install the npm packages
+You need to 1st make sure that 'git' and 'npm' which is part of nodejs is installed on your system. You can use
+the 'which' command to test whether an executable is present on the system:
+
+    which npm
+
+Download e.g. the current latest app tree from GitHub via the command:
+
+    git clone https://github.com/unaids/dhis2-unaids-eppspectrum.git
+
+Change directories into the root of the project (the /dhis2-unaids-eppspectrum directory).
+From the root of the project:
+
+Set the node npm root to this directory.  This command will create a folder ./node_modules  
+
+    npm root
+
+Install the required npm packages in order to build the app:
 
     npm install
 
-Make sure you have bower installed globally
+Make sure you have bower installed
 
-    npm install -g bower
+    npm install bower
+
+At this point you need to make sure that binaries we are installing are properly in your path.
+npm will, by default, create symlink to binaries in the folder ./node_modules/.bin, so the following
+command will include this into your path. Not of course that this will only work from the root of the
+project directory:
+
+    export PATH="./node_modules/.bin:$PATH"
 
 Install the bower packages
 
     bower install
 
-Make sure you have gulp installed globally
+Make sure you have gulp installed
 
-    npm install -g gulp
+    npm install gulp
 
 Make sure everything is setup correctly
 
