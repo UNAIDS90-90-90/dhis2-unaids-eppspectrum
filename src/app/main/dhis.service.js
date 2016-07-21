@@ -4,27 +4,10 @@
         function($http, authHeader, $q, x2js) {
             var fileSetting = 'spectrumConfigFiles';
             var stateSetting = 'spectrumImportState';
-
-            // We're currently hosting the XML configuration file directly on GitHub from this app in the associated resources repository.
-            // However, Github When you request certain types of files (like JavaScript, CSS, or HTML) from raw.githubusercontent.com or
-            // gist.githubusercontent.com, GitHub serves them with a Content-Type header set to text/plain. As a result, most modern browsers
-            // won't actually interpret these files as JavaScript, CSS, or HTML and will instead just display them as text.
-            // GitHub does this because serving raw files from a git repo is inefficient and they want to discourage people from
-            // using their GitHub repos for static file hosting.
-            // The service RawGit.com acts as a caching proxy. It forwards requests to GitHub, caches the responses, and relays them to the
-            // browser with an appropriate Content-Type header based on the extension of the file that was requested. The caching layer
-            // ensures that minimal load is placed on GitHub, and you get quick and easy static file hosting right from a GitHub repo.
-            // Long term for the UNAIDS app, this may not be the best approach as we don't know how long RawGit will continue to offer this
-            // service.  So, it may eventually be better to create e.g. a persistent url within *.unaids.org to host these critical files.
-            // -- Jul 21, 2016  whotopia
-            // current raw file links are:
-            // dataElementFile: https://raw.githubusercontent.com/UNAIDS/dhis2-unaids-eppspectrum-resources/master/configuration/current/hivpopdata_DataElements.xml
-            // indicatorFile:   https://raw.githubusercontent.com/UNAIDS/dhis2-unaids-eppspectrum-resources/master/configuration/current/hivpopdata_Indicators.xml
-            // dashboardFile:   https://raw.githubusercontent.com/UNAIDS/dhis2-unaids-eppspectrum-resources/master/configuration/current/hivpopdata_Documents.xml
             var initialConfig = {
-                dataElementFile: 'https://cdn.rawgit.com/UNAIDS/dhis2-unaids-eppspectrum-resources/master/configuration/current/hivpopdata_DataElements.xml',
-                indicatorFile:   'https://cdn.rawgit.com/UNAIDS/dhis2-unaids-eppspectrum-resources/master/configuration/current/hivpopdata_Indicators.xml',
-                dashboardFile:   'https://cdn.rawgit.com/UNAIDS/dhis2-unaids-eppspectrum-resources/master/configuration/current/hivpopdata_Documents.xml',
+                dataElementFile: 'https://raw.githubusercontent.com/UNAIDS/dhis2-unaids-eppspectrum-resources/master/configuration/current/hivpopdata_DataElements.xml',
+                indicatorFile:   'https://raw.githubusercontent.com/UNAIDS/dhis2-unaids-eppspectrum-resources/master/configuration/current/hivpopdata_Indicators.xml',
+                dashboardFile:   'https://raw.githubusercontent.com/UNAIDS/dhis2-unaids-eppspectrum-resources/master/configuration/current/hivpopdata_Documents.xml',
                 strategy: {
                     value: 'NEW',
                     text: 'New Only'
