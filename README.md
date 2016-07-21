@@ -28,7 +28,7 @@ bug/discuss list associated with this GitHub project.
 
 # Software Development Setup
 
-You need to 1st make sure that 'git' and 'npm' which is part of nodejs is installed on your system. You can use
+You need to 1st make sure that 'git' and 'npm' which are part of nodejs is installed on your system. You can use
 the 'which' command to test whether an executable is present on the system:
 
     which npm
@@ -54,7 +54,7 @@ Make sure you have bower installed
 
 At this point you need to make sure that binaries we are installing are properly in your path.
 npm will, by default, create symlink to binaries in the folder ./node_modules/.bin, so the following
-command will include this into your path. Not of course that this will only work from the root of the
+command will include this into your path. Note, of course, that this will only work from the root of the
 project directory:
 
     export PATH="./node_modules/.bin:$PATH"
