@@ -8,6 +8,13 @@ https://github.com/UNAIDS/dhis2-unaids-eppspectrum-resources
 
 This repository is focused on the application source code
 
+
+You can find pre-built releases to DOWNLOAD HERE:
+
+https://github.com/UNAIDS/dhis2-unaids-eppspectrum/releases/
+
+
+
 ###
 ## To build this DHIS2 App from scratch see instructions below
 ###
@@ -51,7 +58,3 @@ To create a zip of the app application
     gulp pack
 
 The zip file should then be available in the folder target.
-
-You can find pre-built releases to DOWNLOAD HERE:
-
-    https://github.com/UNAIDS/dhis2-unaids-eppspectrum/releases/
