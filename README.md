@@ -2,8 +2,24 @@
 
 HIV Pop Data - DHIS2 Plugin App to load UNAIDS Spectrum/Estimation and Projection Package (EPP) model outputs
 
+For detailed documentation on this app, please see the related repository at:
 
-# Development Setup
+https://github.com/UNAIDS/dhis2-unaids-eppspectrum-resources
+
+This repository is focused on the application source code
+
+###
+## To build this DHIS2 App from scratch see instructions below
+###
+
+App can be built on OSX (with appropriate homebrew or macports setup) or on Unix
+host (Linux and FreeBSD have been tested).
+
+If you are trying to build this application and have problems, please post on the
+bug/discuss list associated with this GitHub project.
+
+
+# Software Development Setup
 From the root of the project.
 
 Install the npm packages
@@ -26,9 +42,9 @@ Make sure everything is setup correctly
 
     gulp test
 
-Build and deploy the app to a DHIS Instance
+Build and deploy the app to a DHIS Instance (DHIS2HOSTNAME and e.g. TCP Port 8080)
 
-    gulp clean deploy --url=http://localhost:8080 --username=admin --password=district
+    gulp clean deploy --url=http://DHIS2HOSTNAME:8080 --username=admin --password=district
 
 To create a zip of the app application
 
@@ -38,6 +54,4 @@ The zip file should then be available in the folder target.
 
 You can find pre-built releases to DOWNLOAD HERE:
 
-    https://github.com/entuura/dhis2-unaids-eppspectrum/releases/
-
-
+    https://github.com/UNAIDS/dhis2-unaids-eppspectrum/releases/
