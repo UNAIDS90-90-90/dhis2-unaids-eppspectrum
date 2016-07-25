@@ -30,7 +30,7 @@
             $scope.summaries = [];
             $scope.loading = true;
             var setupDocuments = function() {
-                dhis.documentsLike('Spec').then(function(data) {
+                dhis.documentsLike('HIV Pop').then(function(data) {
                     $scope.documents = data.documents;
                 });
             };
