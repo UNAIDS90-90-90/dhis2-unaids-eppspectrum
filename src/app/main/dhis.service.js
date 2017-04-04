@@ -140,7 +140,7 @@
                     resourceDeferred.resolve(data);
                 };
                 loadResource(path).then(function(resource) {
-                    buildUrl('/api/metaData?importStrategy=' + strategy.value).then(function(url) {
+                    buildUrl('/api/metadata?importStrategy=' + strategy.value).then(function(url) {
                         $http({
                             method: 'POST',
                             url: url,
